@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Landing Page</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="banner">
+            <p class="offer">Celebrating 1 year of company! Avail benefits up to ₹1,20,000 | 23 seats left | <a href="#">Apply Now</a></p>
+        </div>
+        <div class="navbar">
+            <img src="download.png" alt="Microsoft Logo" class="logo">
+            <div class="navbar-toggle" id="navbarToggle">
+                &#9776; <!-- Unicode for hamburger icon -->
+            </div>
+            <!-- Added id="navMenu" to target it correctly in JavaScript -->
+            <nav id="navMenu">
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Placements</a></li>
+                </ul>
+            </nav>
+            <div class="buttons">
+                <button class="signin">
+                    <i class="fas fa-user"></i> Sign Up / Sign In
+                </button>
+                <button class="explore">
+                    <i class="fas fa-compass"></i> Explore
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <script>
+        const navbarToggle = document.getElementById('navbarToggle');
+        const navMenu = document.getElementById('navMenu');
+    
+        navbarToggle.addEventListener('click', function() {
+            if (navMenu.style.display === 'block') {
+                navMenu.style.display = 'none';
+            } else {
+                navMenu.style.display = 'block';
+            }
+        });
+    </script>
+    
+</body>
+</html>
